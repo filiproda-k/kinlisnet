@@ -5,9 +5,25 @@
         url(fonts/Hybrid.woff2);
 }
 
+@font-face {
+    font-family: "Antapani";
+    src: 
+        url(fonts/Antapani-ExtraBold.otf)
+}
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 100;}
+}
+
+.hybridFont {
+    font-family: Hybrid;
+    color: rgb(0, 0, 0);
+}
+
+.antapaniFont {
+    font-family: Antapani;
+    color: rgb(0, 0, 0)
 }
 
 body {
@@ -30,7 +46,6 @@ body {
     color: rgb(180, 151, 163);
     transition: 0.2s;
     transition-timing-function: ease;
-    font-family: Hybrid;
     background-color: transparent;
 }
 
@@ -39,8 +54,7 @@ body {
 }
 
 .hyperlink {
-    font-family: Hybrid;
-    font-size: 250%;
+    font-size: 1.5vmax;
     color: rgb(157, 175, 255);
     text-decoration: none;
 }
@@ -49,7 +63,6 @@ body {
     outline: none;
     background-color: rgb(180, 151, 163);
     border-radius: 5px;
-    font-family: Hybrid;
     color: white;
     border: none;
     text-align: center;
