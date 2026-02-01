@@ -1,6 +1,16 @@
 @font-face {
     font-family: "Hybrid";
-    src: url(Hybrid.ttf);
+    src: url(Fonts/Hybrid.ttf);
+}
+
+@font-face {
+    font-family: "Andromeda";
+    src: url(Fonts/Andromeda-Bold.otf);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 100;}
 }
 
 body {
@@ -17,29 +27,41 @@ body {
     margin: 20px;
 }
 
-.hybridFont {
-    font-family: Hybrid;
-}
-
-.topButton {
-    vertical-align: top;
-    font-size: 400%;
+.button {
     text-align: center;
     border: none;
-    background-color: transparent;
     color: rgb(180, 151, 163);
     transition: 0.2s;
     transition-timing-function: ease;
+    font-family: Hybrid;
+    background-color: transparent;
 }
 
-.topButton:hover {
+.button:hover {
     color: rgb(255, 219, 171);
+}
+
+.hyperlink {
+    font-family: Hybrid;
+    font-size: 250%;
+    color: rgb(157, 175, 255);
+    text-decoration: none;
+}
+
+.textbox {
+    outline: none;
+    background-color: rgb(180, 151, 163);
+    border-radius: 5px;
+    font-family: Hybrid;
+    color: white;
+    border: none;
+    text-align: center;
 }
 
 .container {
     width: 100%;
     height: 100%;
+    position: absolute;
 
-    align-items: center;
     transition: opacity 0.5s ease;
 }
