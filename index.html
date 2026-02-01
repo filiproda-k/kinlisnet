@@ -1,6 +1,56 @@
 <link rel="stylesheet" href="styles.css">
 
 <body>
-    <img src = "cover.png" style="width: 100%">
-    <img src = "title.png" style="width: 500px">
+    <img src = "cover.png" style = "
+        height: 30%;
+        width: 100%;
+        object-fit: cover
+    ">
+
+    <div id="topbar" class="topbar" style = "
+        width: 100%;
+        height: 100px;
+    ">
+        <img src = "title.png" style="height: 50%" class="topbarSpacer">
+
+        <button id="homeButton" class="topButton topbarSpacer hybridFont">home</button>
+        <button id="liveButton" class="topButton topbarSpacer hybridFont">live</button>
+        <button id="vaultButton" class="topButton topbarSpacer hybridFont">vault</button>
+    </div>
+
+    <div id="pageContainer" style="
+        position: absolute;
+        top: calc(30% + 100px);
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+    ">
+        <div id="homeContainer" class="container">
+
+        </div>
+
+        <div id="liveContainer" class="container">
+
+        </div>
+
+        <div id="vaultContainer" class="container">
+            <input type="text" id="vaultText" style="
+                position: absolute;
+                top: calc(40% - 100px);
+                bottom: calc(60% + 50px);
+                left: calc(50% - 400px);
+                right: calc(50% - 400px);
+            ">
+
+            <button id="vaultEnterButton" style="
+                position: absolute;
+                top: calc(50% - 80px);
+                bottom: calc(50% + 30px);
+                left: calc(50% - 70px);
+                right: calc(50% - 70px);
+            ">enter</button>
+        </div>
+    </div>
 </body>
+
+<script src="main.js"></script>
