@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Hybrid";
-    src: url(fonts/Hybrid.ttf);
+    src: 
+        url(fonts/Hybrid.ttf)
+        url(fonts/Hybrid.woff2);
 }
 
 @keyframes fadeIn {
