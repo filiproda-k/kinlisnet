@@ -1,11 +1,6 @@
 @font-face {
     font-family: "Hybrid";
-    src: url(Fonts/Hybrid.ttf);
-}
-
-@font-face {
-    font-family: "Andromeda";
-    src: url(Fonts/Andromeda-Bold.otf);
+    src: url(fonts/Hybrid.ttf);
 }
 
 @keyframes fadeIn {
