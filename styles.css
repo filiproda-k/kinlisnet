@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Hybrid";
-    src: 
+    src:
+        url(fonts/Hybrid.woff2)
         url(fonts/Hybrid.ttf)
-        url(fonts/Hybrid.woff2);
 }
 
 @font-face {
