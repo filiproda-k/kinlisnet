@@ -12,10 +12,20 @@ let vaultContainer = document.getElementById("vaultContainer")
 let vaultTextEntry = document.getElementById("vaultTextEntry")
 let vaultEntryButton = document.getElementById("vaultEntryButton")
 
+let mainPage = document.getElementById("mainPage")
+let whitePage = document.getElementById("whitePage")
+let testPage = document.getElementById("testPage")
+
 let containers = {
     "home" : homeContainer,
     "live" : liveContainer,
     "vault" : vaultContainer,
+}
+
+let pages = {
+    "main" : mainPage,
+    "white" : whitePage,
+    "test" : testPage,
 }
 
 function SwitchMenu(menuName) {
@@ -29,9 +39,24 @@ function SwitchMenu(menuName) {
     }
 }
 
+function SwitchPage(pageName) {
+    for (let[name, menu] of Object.entries(pages)) {
+        if (menu == null) {
+            continue
+        }
+
+        menu.style.opacity = pageName == name && 100 || 0
+        menu.style.pointerEvents = pageName == name && "auto" || "none"
+    }
+}
+
 function EnterCode() {
     let code = vaultTextEntry.value
     vaultTextEntry.value = ""
+
+    if (code == "test") {
+        SwitchPage("test")
+    }
 }
 
 homeButton.onclick = function() {
@@ -51,6 +76,13 @@ vaultEntryButton.onclick = function() {
 }
 
 function EntryAnimation() {
+    SwitchMenu("")
+    SwitchPage("white")
+
+    setTimeout(function() {
+        SwitchPage("main")
+    }, 600)
+
     let toAnimate = {
         1000: cover,
         2000: title,
@@ -79,5 +111,4 @@ function EntryAnimation() {
     }, 4000)
 }
 
-SwitchMenu("")
 EntryAnimation()

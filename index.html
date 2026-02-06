@@ -1,86 +1,97 @@
 <link rel="stylesheet" href="styles.css">
 
 <body>
-    <img id="cover" src = "cover.png" style = "
-        height: 30%;
-        width: 100%;
-        object-fit: cover
-    ">
+    <div id="mainPage" class="page">
+        <img id="cover" src = "cover.png" style = "
+            height: 30%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0;
+        ">
 
-    <div id="topbar" class="topbar" style = "
-        width: 100%;
-        height: 100px;
-    ">
-        <img id = "title" src = "title.png" style="height: 50%" class="topbarSpacer">
+        <div id="topbar" class="topbar" style = "
+            width: 100%;
+            height: 100px;
+        ">
+            <img id = "title" src = "title.png" style="height: 50%; opacity: 0;" class="topbarSpacer">
 
-        <button id="homeButton" class="button topbarSpacer hybridFont" style="font-size: 400%;">home</button>
-        <button id="liveButton" class="button topbarSpacer hybridFont" style="font-size: 400%;">live</button>
-        <button id="vaultButton" class="button topbarSpacer hybridFont" style="font-size: 400%;">vault</button>
+            <button id="homeButton" class="button topbarSpacer hybridFont" style="font-size: 400%;">home</button>
+            <button id="liveButton" class="button topbarSpacer hybridFont" style="font-size: 400%;">live</button>
+            <button id="vaultButton" class="button topbarSpacer hybridFont" style="font-size: 400%;">vault</button>
+        </div>
+
+        <div id="pageContainer" style="
+            position: absolute;
+            top: calc(30% + 100px);
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+        ">
+            <div id="homeContainer" class="container" style="opacity: 0;">
+                <div style="
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                ">
+                    <img id="cover" src = "photo 1.png" style = "
+                        width: 20vmax;
+                        margin: 50px;
+                    ">
+
+                    <p style="
+                        color: rgb(180, 151, 163);
+                        width: 300px;
+                        flex-wrap: wrap;
+                        font-size: 1.5vmax;
+                    " class="antapaniFont">hi, i'm Kinlis. formerly known as filiprodak. bookmark this page and keep your eyes peeled for more news.</p>
+                </div>
+            </div>
+
+            <div id="liveContainer" class="container">
+                <div style="
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                ">
+                    <a href="https://fatso.ma/3cW3" class="hyperlink antapaniFont">27th february - powerleague colchester</a>
+                    <a href="https://colchesterartscentre.ticketsolve.com/ticketbooth/shows/1173664193/events/428708494" class="hyperlink antapaniFont">8th march - colchester arts centre</a>
+                </div>
+            </div>
+
+            <div id="vaultContainer" class="container">
+                <div style="
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                ">
+                    <input type="text" id="vaultTextEntry" style="
+                        font-size: 1.5vmax;
+                        height: 3vmax;
+                    " class="textbox antapaniFont">
+
+                    <button id="vaultEntryButton" style="
+                        font-size: 1.5vmax;
+                    " class="button antapaniFont">enter</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="pageContainer" style="
-        position: absolute;
-        top: calc(30% + 100px);
-        bottom: 0%;
-        left: 0%;
-        right: 0%;
-    ">
-        <div id="homeContainer" class="container">
-            <div style="
-                width: 100%;
-                height: 80%;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-            ">
-                <img id="cover" src = "photo 1.png" style = "
-                    width: 20vmax;
-                    margin: 50px;
-                ">
+    <div id="whitePage" class="page" style="background-color: rgb(255, 255, 255);">
 
-                <p style="
-                    color: rgb(180, 151, 163);
-                    width: 300px;
-                    flex-wrap: wrap;
-                    font-size: 1.5vmax;
-                " class="antapaniFont">hi, i'm Kinlis. formerly known as filiprodak. bookmark this page and keep your eyes peeled for more news.</p>
-            </div>
-        </div>
+    </div>
 
-        <div id="liveContainer" class="container">
-            <div style="
-                width: 100%;
-                height: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            ">
-                <a href="https://fatso.ma/3cW3" class="hyperlink antapaniFont">27th february - powerleague colchester</a>
-                <a href="https://colchesterartscentre.ticketsolve.com/ticketbooth/shows/1173664193/events/428708494" class="hyperlink antapaniFont">8th march - colchester arts centre</a>
-            </div>
-        </div>
+    <div id="testPage" class="page" style="background-color: black;">
 
-        <div id="vaultContainer" class="container">
-            <div style="
-                width: 100%;
-                height: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            ">
-                <input type="text" id="vaultTextEntry" style="
-                    font-size: 1.5vmax;
-                    height: 3vmax;
-                " class="textbox antapaniFont">
-
-                <button id="vaultEntryButton" style="
-                    font-size: 1.5vmax;
-                " class="button antapaniFont">enter</button>
-            </div>
-        </div>
     </div>
 </body>
 
