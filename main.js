@@ -28,6 +28,8 @@ let pages = {
     "test" : testPage,
 }
 
+// hi
+
 function SwitchMenu(menuName) {
     for (let[name, menu] of Object.entries(containers)) {
         if (menu == null) {
