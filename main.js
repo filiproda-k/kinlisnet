@@ -115,4 +115,5 @@ function EntryAnimation() {
     }, 4000)
 }
 
+SwitchPage("")
 EntryAnimation()
