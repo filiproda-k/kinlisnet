@@ -52,8 +52,6 @@ function SwitchPage(pageName) {
     }
 }
 
-// hi
-
 function EnterCode() {
     let code = vaultTextEntry.value
     vaultTextEntry.value = ""
