@@ -14,7 +14,7 @@ let vaultEntryButton = document.getElementById("vaultEntryButton")
 
 let mainPage = document.getElementById("mainPage")
 let whitePage = document.getElementById("whitePage")
-let testPage = document.getElementById("testPage")
+let wayOutPage = document.getElementById("wayOutPage")
 
 let containers = {
     "home" : homeContainer,
@@ -25,7 +25,7 @@ let containers = {
 let pages = {
     "main" : mainPage,
     "white" : whitePage,
-    "test" : testPage,
+    "wayout" : wayOutPage,
 }
 
 // hi
@@ -56,8 +56,8 @@ function EnterCode() {
     let code = vaultTextEntry.value
     vaultTextEntry.value = ""
 
-    if (code == "test") {
-        SwitchPage("test")
+    if (code == "way out") {
+        SwitchPage("wayout")
     }
 }
 
