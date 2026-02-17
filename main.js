@@ -53,7 +53,7 @@ function SwitchPage(pageName) {
 }
 
 function EnterCode() {
-    let code = vaultTextEntry.value
+    let code = vaultTextEntry.value.toLowerCase()
     vaultTextEntry.value = ""
 
     if (code == "way out") {
