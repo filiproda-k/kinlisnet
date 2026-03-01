@@ -15,6 +15,7 @@ let vaultEntryButton = document.getElementById("vaultEntryButton")
 let mainPage = document.getElementById("mainPage")
 let whitePage = document.getElementById("whitePage")
 let wayOutPage = document.getElementById("wayOutPage")
+let mirrorPage = document.getElementById("mirrorPage")
 
 let containers = {
     "home" : homeContainer,
@@ -26,6 +27,7 @@ let pages = {
     "main" : mainPage,
     "white" : whitePage,
     "wayout" : wayOutPage,
+    "mirror" : mirrorPage,
 }
 
 // hi
@@ -58,6 +60,8 @@ function EnterCode() {
 
     if (code == "way out") {
         SwitchPage("wayout")
+    } else if (code == "mirror") {
+        SwitchPage("mirror")
     }
 }
 
