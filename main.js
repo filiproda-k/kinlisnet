@@ -16,6 +16,7 @@ let mainPage = document.getElementById("mainPage")
 let whitePage = document.getElementById("whitePage")
 let wayOutPage = document.getElementById("wayOutPage")
 let mirrorPage = document.getElementById("mirrorPage")
+let diary01Page = document.getElementById("diary01")
 
 let containers = {
     "home" : homeContainer,
@@ -28,6 +29,7 @@ let pages = {
     "white" : whitePage,
     "wayout" : wayOutPage,
     "mirror" : mirrorPage,
+    "diary01": diary01Page,
 }
 
 // hi
@@ -62,6 +64,8 @@ function EnterCode() {
         SwitchPage("wayout")
     } else if (code == "mirror") {
         SwitchPage("mirror")
+    } else if (code == "diary 01") {
+        SwitchPage("diary01")
     }
 }
 
