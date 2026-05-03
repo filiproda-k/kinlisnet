@@ -17,6 +17,9 @@ let whitePage = document.getElementById("whitePage")
 let wayOutPage = document.getElementById("wayOutPage")
 let mirrorPage = document.getElementById("mirrorPage")
 let diary01Page = document.getElementById("diary01")
+let citadelPage = document.getElementById("citadel")
+let foreverPage = document.getElementById("foreverPage")
+let diary03Page = document.getElementById("diary03")
 
 let containers = {
     "home" : homeContainer,
@@ -30,6 +33,9 @@ let pages = {
     "wayout" : wayOutPage,
     "mirror" : mirrorPage,
     "diary01": diary01Page,
+    "citadel": citadelPage,
+    "forever": foreverPage,
+    "diary03": diary03Page
 }
 
 // hi
@@ -62,10 +68,16 @@ function EnterCode() {
 
     if (code == "way out") {
         SwitchPage("wayout")
+    } else if (code == "forever") {
+        SwitchPage("forever")
     } else if (code == "mirror") {
         SwitchPage("mirror")
-    } else if (code == "diary 01") {
+    } else if (code.match("diary")) {
         SwitchPage("diary01")
+    } else if (code == "nevermore") {
+        window.location.replace("https://soundcloud.com/itskinlis/nevermore");
+    } else if (code == "the citadel" || code == "citadel") {
+        SwitchPage("citadel")
     }
 }
 

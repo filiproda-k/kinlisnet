@@ -1,0 +1,25 @@
+<div id="way out links" style="
+    width: 100%;
+    height: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+">
+    <a href="https://open.spotify.com/album/5dYnaHm122j2SdaL6TbYSu?si=mo-EiYR7QMmV_2SiGeSfqA">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" class="socialIcon" style="filter: invert();">
+    </a>
+
+    <a href="https://soundcloud.com/itskinlis/wayout">
+        <img src="https://cdn-icons-png.flaticon.com/512/48/48967.png" class="socialIcon">
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=45Ox5G0eoLg">
+        <img src="https://image.similarpng.com/file/similarpng/very-thumbnail/2021/01/Youtube-icon-symbol-on-transparent-background-PNG.png" class="socialIcon">
+    </a>
+
+    <a href="https://ffm.to/kinlis-way-out">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0zDewYYgA8XtEA_xl2d_TsWfY6tJOnsPAQ&s" class="socialIcon">
+    </a>
+</div>
