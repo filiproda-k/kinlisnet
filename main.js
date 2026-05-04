@@ -75,7 +75,7 @@ function EnterCode() {
     } else if (code.match("diary")) {
         SwitchPage("diary01")
     } else if (code == "nevermore") {
-        window.location.replace("https://soundcloud.com/itskinlis/nevermore");
+        window.location.replace("https://soundcloud.com/itskinlis/nevermore/s-k46CBzFghDJ?si=dd9193ca8ad74660bce1d988a8bfa18f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing");
     } else if (code == "the citadel" || code == "citadel") {
         SwitchPage("citadel")
     }
