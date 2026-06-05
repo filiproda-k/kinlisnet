@@ -96,7 +96,7 @@ body {
 }
 
 .magazineCover {
-    width: 20.5vmin;
+    width: 17.5vmin;
     box-shadow: 0px 0px 0px;
     transition: 0.5s;
     transform: translate(-50%, -50%);
@@ -104,7 +104,7 @@ body {
 
 .magazineCover:hover {
     box-shadow: 0px 0px 50px black;
-    width: 25vmin;
+    width: 22vmin;
 }
 
 .magazineCoverText {

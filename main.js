@@ -68,7 +68,7 @@ function EnterCode() {
 
     if (code == "way out") {
         SwitchPage("wayout")
-    } else if (code == "forever") {
+    } else if (code == "forever" || code == "motionblur") {
         SwitchPage("forever")
     } else if (code == "mirror") {
         SwitchPage("mirror")
